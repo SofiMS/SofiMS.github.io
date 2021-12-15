@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Pudgy Puss NF W01 Regular";
+  font-style: normal;
+  font-display: swap;
+  src: url("Fonts/Regular.woff") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgb(255, 210, 210) 50%, rgb(250, 213, 213) 50%);
+}
+
+img {
+  max-width: 100%;
+  justify-content: center;
+}
+
+.header {
+  position: sticky;
+  background-color: black;
+  top: 0px;
+  left: 28px;
+  z-index: 1;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.menu {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  list-style-type: none;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: right;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper-logo {
+  display: flex;
+  margin-bottom: 0%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: auto;
+  width: 70%;
+  margin: 0 auto;
+  height: 400px;
+}
+.menu a {
+  display: block;
+  padding: 4px;
+  margin: 0 4px 6px;
+  font-size: 20px;
+
+  text-decoration: none;
+  color: white;
+}
+.menu a:hover {
+  color: rgb(241, 93, 93);
+}
+
+.section {
+  width: 100vw;
+  min-height: 50vh;
+  max-width: 100%;
+  padding-top: 56px;
+  padding-bottom: 16px;
+}
+
+.section-column {
+  display: flex;
+  min-height: 100hv;
+}
+
+.section-image-logo {
+  display: flex;
+  margin-bottom: 0%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: auto;
+  width: 50%;
+}
+
+.colleft {
+  flex-basis: calc(90% / 2);
+}
+.colright {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(10% / 2);
+  padding-right: 0em;
+  padding-left: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+h2 {
+  font-family: "Pudgy Puss NF W01 Regular";
+  font-size: 3.5em;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+  margin-top: 0;
+}
+
+.gallery-item .text {
+  display: flex;
+  font-size: 0.8em;
+  margin: 0%;
+  margin-bottom: 6em;
+  justify-content: center;
+}
+#about {
+  font-family: "IBM Plex Sans";
+}
+
+#about .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+#about .section-title {
+  width: 100%;
+}
+#about .section-image img {
+  width: 100%;
+}
+
+*/ #about .section-image {
+  width: 50%;
+}
+#portfolio {
+  font-family: "IBM Plex Sans";
+}
+#contacts {
+  background-image: url(jl.png);
+  height: 700px;
+
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  display: flex;
+}
+.gallery-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+
+.gallery-item p {
+  padding: 10px;
+}
+.gallery img {
+  max-width: 100%;
+}
+
+.gallery-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  list-style-type: none;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.link a {
+  display: block;
+  padding: 4px;
+  margin: 0 4px 8px;
+  font-size: 20px;
+
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.link a:hover {
+  color: rgb(241, 93, 93);
+}
+
+@media (max-width: 480px) {
+  #about .wrapper {
+    flex-direction: column;
+  }
+}
