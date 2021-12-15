@@ -71,8 +71,8 @@ img {
   display: flex;
   min-height: auto;
   width: 70%;
-  margin: 0 auto;
-  height: 400px;
+  margin: auto;
+  height: 600px;
 }
 .menu a {
   display: block;
